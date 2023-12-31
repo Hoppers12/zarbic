@@ -7,7 +7,7 @@ class Pile:
     def __init__(self):
         self.pile_colis = queue.LifoQueue()  # Création d'une pile
 
-''' Fonction qui teste si la pile est vide'''
+    ''' Fonction qui teste si la pile est vide'''
     def empty(self):
         return self.pile_colis.empty()
     ''' Fonction qui empile une valeur'''
