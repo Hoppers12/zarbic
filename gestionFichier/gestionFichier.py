@@ -3,7 +3,7 @@ Ce module gère la lecture de fichiers.
 """
 def lire_fichier(nom_fichier):
     try:
-        with open(nom_fichier, 'r',encoding='utf-8') as fichier:
+        with open(nom_fichier, 'r') as fichier:
             contenu = fichier.read()
             return contenu
     except FileNotFoundError:
@@ -13,9 +13,7 @@ def lire_fichier(nom_fichier):
     except IOError as e:
         return f"Erreur lors de la lecture du fichier : {str(e)}"
 
- '''
- Fonction qui retourne le contenu du fichier sous forme de tableau
- '''
+'''retourne le contenu ds un tableau'''
 def contenu_en_tableau(nom_fichier):
     contenu = lire_fichier(nom_fichier)
     if contenu.startswith("Une erreur s'est produite"):
