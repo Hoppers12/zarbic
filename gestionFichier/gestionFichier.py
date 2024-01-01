@@ -15,9 +15,7 @@ def lire_fichier(nom_fichier):
     except IOError as e:
         return f"Erreur lors de la lecture du fichier : {str(e)}"
 
-'''
-retourne le contenu ds un tab
-'''
+#Retourne le contenu du fichier adns un tableau
 def contenu_en_tableau(nom_fichier):
     '''Cette fonction range le contenu de la pile dans un tableau et le retourne
     Elle prend en paramètre le nom du fichier'''
