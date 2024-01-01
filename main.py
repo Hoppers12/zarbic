@@ -1,6 +1,6 @@
 ''' importe le package qui gère les fichiers'''
 from gestionFichier.gestionFichier import *
-from gestionCalcul.gestionCalcul import Zarbic
+from gestionCalcul import Zarbic
 
 
 # Utilisation de la fonction pour lire un fichier.txt

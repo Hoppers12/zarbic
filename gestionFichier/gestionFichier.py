@@ -2,6 +2,8 @@
 Ce module gère la lecture de fichiers.
 """
 def lire_fichier(nom_fichier):
+    '''Cette fonction s'occupe d'ouvrir un fichier et de le lire
+    Elle prend en paramètres le nom du fichier'''
     try:
         with open(nom_fichier, 'r') as fichier:
             contenu = fichier.read()
@@ -13,8 +15,12 @@ def lire_fichier(nom_fichier):
     except IOError as e:
         return f"Erreur lors de la lecture du fichier : {str(e)}"
 
-'''retourne le contenu ds un tableau'''
+'''
+retourne le contenu ds un tab
+'''
 def contenu_en_tableau(nom_fichier):
+    '''Cette fonction range le contenu de la pile dans un tableau et le retourne
+    Elle prend en paramètre le nom du fichier'''
     contenu = lire_fichier(nom_fichier)
     if contenu.startswith("Une erreur s'est produite"):
         return contenu  # Gérer le cas d'erreur de lecture du fichier
