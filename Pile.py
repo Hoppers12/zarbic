@@ -1,18 +1,23 @@
-'''Importe la classee queue qui permet de manipuler des piles/file'''
+'''Importe la classee queue
+qui permet de manipuler des piles/file
+'''
 import queue  # Import de la classe queue
-''' Classe qui permet de manipuler une pile'''
+''' La 
+Classe qui permet de manipuler une pile
+'''
 class Pile:
-    ''' Constructeur de la classe '''
+    '''Le
+        Constructeur de la classe '''
     def __init__(self):
         self.pile_colis = queue.LifoQueue()  # Création d'une pile
 
-    '''
+    ''' la
      Fonction qui teste si la pile est vide
     '''
     def empty(self):
         '''Cette méthode retourne si la pile est vide ou non'''
         return self.pile_colis.empty()
-    ''' 
+    ''' la
     Fonction qui empile une valeur
     '''
     def ajouter_valeur(self,valeur):
@@ -20,7 +25,7 @@ class Pile:
         elle prend en paramètre la valeur a ajouter '''
         return self.pile_colis.put(valeur)
 
-    '''
+    ''' la 
      Fonction qui dépile
     '''
     def depiler(self):
