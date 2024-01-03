@@ -35,7 +35,7 @@ class Pile:
         elle prend en paramètre la valeur a ajouter """
         return self.pile_colis.put(valeur)
 
-    """Fonction qui dépile"""
+    #Fonction qui dépile
     def depiler(self):
         """ Cette méthode dépile l'élément le plus haut de la pile"""
         return self.pile_colis.get()

@@ -5,7 +5,7 @@ def lire_fichier(nom_fichier):
     '''Cette fonction s'occupe d'ouvrir un fichier et de le lire
     Elle prend en paramètres le nom du fichier'''
     try:
-        with open(nom_fichier, 'r') as fichier:
+        with open(nom_fichier, 'r',encoding='utf-8') as fichier:
             contenu = fichier.read()
             return contenu
     except FileNotFoundError:
